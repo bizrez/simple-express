@@ -16,7 +16,7 @@ writeApi.writePoint(point)
 writeApi
     .close()
     .then(() => {
-        console.log('FINISHED')
+        console.log('FINISHED magic')
     })
     .catch(e => {
         console.error(e)
