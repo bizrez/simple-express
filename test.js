@@ -15,7 +15,7 @@ const point = new Point('automated-test-runs')
    .tag('product-family','casino-solutions')
    .tag('product-line', 'aml-compliance')
    .tag('product_module', 'module-1')
-   .booleanField('value',true)
+   .stringField('value','passed')
 
 console.log(`${point}`)
 writeApi.writePoint(point)
