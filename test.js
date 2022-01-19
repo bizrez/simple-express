@@ -8,7 +8,7 @@ const bucket = 'mallon'
 const client = new InfluxDB({url: 'http://20.189.163.219', token: token})
 const {Point} = require('@influxdata/influxdb-client')
 const writeApi = client.getWriteApi(org, bucket)
-writeApi.useDefaultTags({host: 'host1'})
+writeApi.useDefaultTags({host: 'everi'})
 
 //const point = new Point('mem').floatField('used_percent', 23.43234543)
 const point = new Point('automated-test-runs')
