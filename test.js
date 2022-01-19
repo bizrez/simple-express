@@ -10,7 +10,14 @@ const {Point} = require('@influxdata/influxdb-client')
 const writeApi = client.getWriteApi(org, bucket)
 writeApi.useDefaultTags({host: 'host1'})
 
-const point = new Point('mem').floatField('used_percent', 23.43234543)
+//const point = new Point('mem').floatField('used_percent', 23.43234543)
+const point = new Point('automated-test-runs')
+   .tag('product-family','casino-solutions')
+   .tag('product-line', 'aml-compliance')
+   .tag('product_module', 'module-1')
+   .booleanField('value',true)
+
+console.log(`${point}`)
 writeApi.writePoint(point)
 
 writeApi
