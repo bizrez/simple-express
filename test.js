@@ -14,7 +14,7 @@ writeApi.useDefaultTags({host: 'everi'})
 const point = new Point('automated-test-runs')
    .tag('product-family','casino-solutions')
    .tag('product-line', 'surveillance')
-   .tag('product_module', 'module-1')
+   .tag('product-module', 'module-1')
    .stringField('result', 'passed')
    
 
