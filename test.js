@@ -15,7 +15,7 @@ const point = new Point('automated-test-runs')
    .tag('product-family','casino-solutions')
    .tag('product-line', 'surveillance')
    .tag('product-module', 'module-1')
-   .stringField('result', 'passed')
+   .stringField('result', 'failed')
    
 
 console.log(`${point}`)
