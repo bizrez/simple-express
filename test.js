@@ -13,7 +13,7 @@ writeApi.useDefaultTags({host: 'everi'})
 //const point = new Point('mem').floatField('used_percent', 23.43234543)
 const point = new Point('automated-test-runs')
    .tag('product-family','casino-solutions')
-   .tag('product-line', 'aml-compliance')
+   .tag('product-line', 'surveillance')
    .tag('product_module', 'module-1')
    .stringField('result', 'failed')
    
