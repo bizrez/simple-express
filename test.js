@@ -15,7 +15,7 @@ const point = new Point('automated-test-runs')
    .tag('product-family','casino-solutions')
    .tag('product-line', 'aml-compliance')
    .tag('product_module', 'module-1')
-   .booleanField('result', true)
+   .booleanField('passed')
    
 
 console.log(`${point}`)
